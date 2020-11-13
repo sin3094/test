@@ -19,21 +19,21 @@
 				padding: 0,
 				panels: [
 					{ type: 'top', size: 45, content: '<div style="padding: 12px 20px; font-size: 18px;">까띠의 끄적끄적 노트</div>', style: 'border: 0px; border-bottom: 1px solid silver; background-color: #fff; color: #555;', overflow: 'hidden'},
-					{ type: 'left', size: 200, style: pstyle, resizable: true, minSize: 120 },
-					{ type: 'main', overflow: 'hidden', style: 'background-color: white; border: 1px solid silver; border-top: 0px; padding: 10px;', title: 'Main Title'}
+					{ type: 'left', size: 120, style: pstyle, resizable: true, minSize: 70 },
+					{ type: 'main', overflow: 'hidden', style: 'background-color: white; border: 1px solid silver; border-top: 0px; padding: 10px;', title: '화면창'}
 				]
 			},
 			sidebar: { 
 				name: 'sidebar',
 				img: null,
 				nodes: [ 
-					{ id: 'general', text: '연습문제', group1: true, img: 'icon-folder', expanded: true, nodes: [
-						{ id: 'item1', text: '테스트1', img: 'icon-page' , onClick:function(){w2ui.layout.load('main', '');}},
-						{ id: 'item2', text: '테스트2', img: 'icon-page' },
+					{ id: 'general', text: '수업노트', group1: true, img: 'icon-folder', expanded: true, nodes: [
+						{ id: 'item1', text: '1일차', img: 'icon-page' , onClick:function(){w2ui.layout.load('main', '');}},
+						{ id: 'item2', text: '2일차', img: 'icon-page' },
 					]},
-					{ id: 'general1', text: '수업노드', group1: true, img: 'icon-folder', nodes: [
-						{ id: 'item3', text: '1일차', img: 'icon-page' },
-						{ id: 'item4', text: '2일차', img: 'icon-page' },
+					{ id: 'general1', text: '연습문제', group1: true, img: 'icon-folder', nodes: [
+						{ id: 'item3', text: '테스트1', img: 'icon-page' },
+						{ id: 'item4', text: '테스트2', img: 'icon-page' },
 					]}
 				],
 				onClick: function (event) {
