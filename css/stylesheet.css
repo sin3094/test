@@ -49,6 +49,12 @@ a{text-decoration:none; color: inherit;}
 .clr:after{content:""; display:block; clear:both;}
 img { max-width: 100%; }
 
+#main_layout {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
 /* font-size 관련 */
 .f12{font-size:12px;}
 .f13{font-size:13px;}
