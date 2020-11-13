@@ -5,7 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
-	<title>테스트</title>
+	<title>웹퍼블리싱-노트</title>
 	<link rel="stylesheet" href="css/stylesheet.css" />
 	<link rel="stylesheet" href="css/w2ui-1.4.3.min.css" />
 	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
@@ -18,7 +18,7 @@
 				name: 'layout',
 				padding: 0,
 				panels: [
-					{ type: 'top', size: 45, content: '<div style="padding: 12px 20px; font-size: 18px;">AKPLUS-HelpDesk</div>', style: 'border: 0px; border-bottom: 1px solid silver; background-color: #fff; color: #555;', overflow: 'hidden'},
+					{ type: 'top', size: 45, content: '<div style="padding: 12px 20px; font-size: 18px;">까띠의 끄적끄적 노트</div>', style: 'border: 0px; border-bottom: 1px solid silver; background-color: #fff; color: #555;', overflow: 'hidden'},
 					{ type: 'left', size: 200, style: pstyle, resizable: true, minSize: 120 },
 					{ type: 'main', overflow: 'hidden', style: 'background-color: white; border: 1px solid silver; border-top: 0px; padding: 10px;', title: 'Main Title'}
 				]
@@ -27,13 +27,13 @@
 				name: 'sidebar',
 				img: null,
 				nodes: [ 
-					{ id: 'general', text: 'SM관리', group1: true, img: 'icon-folder', expanded: true, nodes: [
-						{ id: 'item1', text: 'SM내역등록', img: 'icon-page' , onClick:function(){w2ui.layout.load('main', '');}},
-						{ id: 'item2', text: 'SM내역조회', img: 'icon-page' },
+					{ id: 'general', text: '연습문제', group1: true, img: 'icon-folder', expanded: true, nodes: [
+						{ id: 'item1', text: '테스트1', img: 'icon-page' , onClick:function(){w2ui.layout.load('main', '');}},
+						{ id: 'item2', text: '테스트2', img: 'icon-page' },
 					]},
-					{ id: 'general1', text: '통계정보', group1: true, img: 'icon-folder', nodes: [
-						{ id: 'item3', text: '고객사별 SM집계내역', img: 'icon-page' },
-						{ id: 'item4', text: '계약대비 실적현황', img: 'icon-page' },
+					{ id: 'general1', text: '수업노드', group1: true, img: 'icon-folder', nodes: [
+						{ id: 'item3', text: '1일차', img: 'icon-page' },
+						{ id: 'item4', text: '2일차', img: 'icon-page' },
 					]}
 				],
 				onClick: function (event) {
