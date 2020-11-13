@@ -1,16 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
-<title>테스트</title>
-<link rel="stylesheet" href="css/stylesheet.css" />
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+	<title>테스트</title>
+	<link rel="stylesheet" href="css/stylesheet.css" />
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/w2ui-1.4.3.js"></script>
+	<script type="text/javascript" src="js/w2ui-1.4.3.min.js"></script>
+	<script type="text/javascript">
+		var pstyle = 'border: 1px solid #dfdfdf; padding: 5px;background-color: #e7f0fc;';
+		var config = {
+			layout: {
+				name: 'layout',
+				padding: 0,
+				panels: [
+					{ type: 'top', size: 45, content: '<div style="padding: 12px 20px; font-size: 18px;">AKPLUS-HelpDesk</div>', style: 'border: 0px; border-bottom: 1px solid silver; background-color: #fff; color: #555;', overflow: 'hidden'},
+					{ type: 'left', size: 200, style: pstyle, resizable: true, minSize: 120 },
+					{ type: 'main', overflow: 'hidden', style: 'background-color: white; border: 1px solid silver; border-top: 0px; padding: 10px;', title: 'Main Title'}
+				]
+			},
+			sidebar: { 
+				name: 'sidebar',
+				img: null,
+				nodes: [ 
+					{ id: 'general', text: 'SM관리', group1: true, img: 'icon-folder', expanded: true, nodes: [
+						{ id: 'item1', text: 'SM내역등록', img: 'icon-page' , onClick:function(){w2ui.layout.load('main', '');}},
+						{ id: 'item2', text: 'SM내역조회', img: 'icon-page' },
+					]},
+					{ id: 'general1', text: '통계정보', group1: true, img: 'icon-folder', nodes: [
+						{ id: 'item3', text: '고객사별 SM집계내역', img: 'icon-page' },
+						{ id: 'item4', text: '계약대비 실적현황', img: 'icon-page' },
+					]}
+				],
+				onClick: function (event) {
+					/* switch (event.target) {
+						case 'item1':
+							w2ui.layout.load('main', '');
+							break;
+					} */
+				}
+			}
+		};
+
+		$(function () {
+			// initialization
+			$('#main_layout').w2layout(config.layout);
+			w2ui.layout.content('left', $().w2sidebar(config.sidebar));
+		});
+	</script>
 </head>
 <body>
-	<div>
-		<h1>까띠룽♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥</h1>
-	</div>
+	<div id="main_layout"></div>
 </body>
 </html>
