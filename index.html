@@ -28,12 +28,19 @@
 				img: null,
 				nodes: [ 
 					{ id: 'general', text: '수업노트', group1: true, img: 'icon-folder', expanded: true, nodes: [
-						{ id: 'item1', text: '1일차', img: 'icon-page' , onClick:function(){w2ui.layout.load('main', 'content/test1.html');}},
+						{ id: 'item1', text: '1일차', img: 'icon-page' , onClick:function(){w2ui.layout.load('main', '');}},
 						{ id: 'item2', text: '2일차', img: 'icon-page' },
 					]},
 					{ id: 'general1', text: '연습문제', group1: true, img: 'icon-folder', nodes: [
-						{ id: 'item3', text: '테스트1', img: 'icon-page' },
-						{ id: 'item4', text: '테스트2', img: 'icon-page' },
+						{ id: 'item3', text: '테스트1', img: 'icon-page' , onClick:function(){w2ui.layout.load('main', 'content/test1.html');}},
+						{ id: 'item4', text: '테스트2', img: 'icon-page' , onClick:function(){w2ui.layout.load('main', 'content/test2.html');}},
+						{ id: 'item1', text: '테스트3', img: 'icon-page' , onClick:function(){w2ui.layout.load('main', 'content/test3.html');}},
+						{ id: 'item1', text: '테스트4', img: 'icon-page' , onClick:function(){w2ui.layout.load('main', 'content/test4.html');}},
+						{ id: 'item1', text: '테스트5', img: 'icon-page' , onClick:function(){w2ui.layout.load('main', 'content/test5.html');}},
+						{ id: 'item1', text: '테스트6', img: 'icon-page' , onClick:function(){w2ui.layout.load('main', 'content/test6.html');}},
+						{ id: 'item1', text: '테스트7', img: 'icon-page' , onClick:function(){w2ui.layout.load('main', 'content/test7.html');}},
+						{ id: 'item1', text: '테스트8', img: 'icon-page' , onClick:function(){w2ui.layout.load('main', 'content/test8.html');}},
+						{ id: 'item1', text: '테스트9', img: 'icon-page' , onClick:function(){w2ui.layout.load('main', '');}},
 					]}
 				],
 				onClick: function (event) {
